@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* Set the body background color to black */
+}
+
+#3d-plot {
+    border: none;
+    /* Remove any borders around the plot */
+}
