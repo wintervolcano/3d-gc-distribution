@@ -1,0 +1,8 @@
+version: 1
+services:
+  - type: web
+    name: 3d-gc-distribution  # Replace with your desired app name
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    plan: free
