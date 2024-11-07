@@ -53,8 +53,8 @@ fig.add_trace(go.Scatter3d(
 ))
 
 # Add the galactic disk
-disk_x = np.random.normal(0, 20, 3000)
-disk_y = np.random.normal(0, 20, 3000)
+disk_x = np.random.normal(0, 13.4, 3000)
+disk_y = np.random.normal(0, 13.4, 3000)
 disk_z = np.random.normal(0, 1, 2000)
 fig.add_trace(go.Scatter3d(
     x=disk_x,
@@ -112,6 +112,15 @@ app.layout = html.Div(
         'overflow': 'hidden'
     },
     children=[
+        html.H1("3D Globular Clusters Visualization", style={
+            'text-align': 'center',
+            'font-family': 'Arial, sans-serif',
+            'font-weight': 'bold',
+            'color': 'white',
+            'margin': '0',
+            'padding': '20px',
+        }),
+        
         dcc.Graph(
             id='3d-plot',
             figure=fig,
