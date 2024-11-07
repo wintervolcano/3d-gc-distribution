@@ -112,7 +112,7 @@ app.layout = html.Div(
         'overflow': 'hidden'
     },
     children=[
-        html.H1("3D Globular Clusters Visualization", style={
+        html.H1("", style={
             'text-align': 'center',
             'font-family': 'Arial, sans-serif',
             'font-weight': 'bold',
