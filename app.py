@@ -3,6 +3,7 @@ from dash import dcc, html
 import plotly.graph_objects as go
 import numpy as np
 import re
+import os
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
@@ -127,6 +128,6 @@ app.layout = html.Div(
     ]
 )
 
-# Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    # Run the app on the specified host and port
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8050)))
